@@ -1,0 +1,22 @@
+diff --git a/po/ko.po b/po/ko.po
+index 5aad890..7ed6baf 100644
+--- a/po/ko.po
++++ b/po/ko.po
+@@ -1590,7 +1590,7 @@ msgstr "온보드 화면 키보드 설정"
+ 
+ #: ../data/onboard-settings.desktop.in.h:3
+ msgid "Change Onboard settings"
+-msgstr "온보드 설정 바꾸기"
++msgstr "온보드의 설정을 변경합니다"
+ 
+ #: ../Onboard/WPEngine.py:483
+ msgid "Failed to load language model '{}': {} ({})"
+@@ -2333,7 +2333,7 @@ msgstr "온보드 화면 키보드"
+ 
+ #: ../data/onboard.desktop.in.h:3 ../data/onboard-autostart.desktop.in.h:3
+ msgid "Flexible onscreen keyboard"
+-msgstr "유연한 화상 키보드"
++msgstr "화상 키보드를 실행합니다"
+ 
+ #: ../Onboard/KbdWindow.py:202
+ msgid "no window transparency available; screen doesn't support alpha channels"
