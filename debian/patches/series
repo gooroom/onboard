@@ -4,3 +4,4 @@
 1003_disable_onboard_on_gnome.patch
 gooroom-001-change-desktop-description-to-sentence.patch
 gooroom-002-update-gooroom-001.patch
+gooroom-003-update-autostart.patch
