@@ -1,0 +1,31 @@
+diff --git a/Onboard/pypredict/lm/lm.cpp b/Onboard/pypredict/lm/lm.cpp
+index 2e64296..9023153 100644
+--- a/Onboard/pypredict/lm/lm.cpp
++++ b/Onboard/pypredict/lm/lm.cpp
+@@ -281,7 +281,7 @@ LMError Dictionary::set_words(const vector<wchar_t*>& new_words)
+         char* w = (char*)MemAlloc((strlen(wtmp) + 1) * sizeof(char));
+         if (!w)
+             return ERR_MEMORY;
+-        strcpy(w, wtmp);
++        strncpy(w, wtmp, strlen(wtmp)+1);
+ 
+         // is this a known control word?
+         bool exists = false;
+@@ -357,7 +357,7 @@ WordId Dictionary::add_word(const wchar_t* word)
+     char* w = (char*)MemAlloc((strlen(wtmp) + 1) * sizeof(char));
+     if (!w)
+         return -1;
+-    strcpy(w, wtmp);
++    strncpy(w, wtmp, strlen(wtmp)+1);
+ 
+     WordId wid = (WordId)words.size();
+     update_sorting(w, wid);
+@@ -721,7 +721,7 @@ LMError LanguageModel::read_utf8(const char* filename, wchar_t*& text)
+             break;
+         int l = wcslen(buf);
+         text = (wchar_t*) realloc(text, (size + l + 1) * sizeof(*text));
+-        wcscpy (text + size, buf);
++        wcsncpy (text + size, buf, l);
+         size += l;
+     }
+ 
