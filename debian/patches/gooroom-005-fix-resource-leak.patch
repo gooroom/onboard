@@ -1,0 +1,24 @@
+diff --git a/Onboard/pypredict/lm/lm.cpp b/Onboard/pypredict/lm/lm.cpp
+index d01ad2b..06741e4 100644
+--- a/Onboard/pypredict/lm/lm.cpp
++++ b/Onboard/pypredict/lm/lm.cpp
+@@ -712,8 +712,10 @@ LMError LanguageModel::read_utf8(const char* filename, wchar_t*& text)
+     int size = 0;
+     const size_t bufsize = 1024*1024;
+     wchar_t* buf = new wchar_t[bufsize];
+-    if (!buf)
++    if (!buf) {
++        fclose(f);
+         return ERR_MEMORY;
++    }
+ 
+     while(1)
+     {
+@@ -724,6 +726,7 @@ LMError LanguageModel::read_utf8(const char* filename, wchar_t*& text)
+         wcsncpy (text + size, buf, l);
+         size += l;
+     }
++    fclose(f);
+ 
+     delete [] buf;
+ 
