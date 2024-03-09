@@ -1,3 +1,18 @@
+onboard (1.4.1-5+grm4u1) unstable; urgency=medium
+
+  [ boyeon.choi ]
+  * [96f070ea] [Bug:5450] Change desktop description to senence
+  * [ddd456b2] Update gooroom-001 patch
+
+  [ gangmo.seong ]
+  * [113cfed6] [feat] change autostart file for tabletmode autostart
+
+  [ cjheo ]
+  * [422e7380] Added patch to fix security vulnerability (CWE-120)
+  * [419c243e] Added patch to fix resource leak.
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Sat, 09 Mar 2024 19:00:17 +0900
+
 onboard (1.4.1-5) unstable; urgency=medium
 
   [ Mike Gabriel ]
