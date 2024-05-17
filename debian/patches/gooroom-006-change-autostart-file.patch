@@ -1,0 +1,13 @@
+diff --git a/data/onboard-autostart.desktop.in b/data/onboard-autostart.desktop.in
+index 8d03c8a..2f733fd 100644
+--- a/data/onboard-autostart.desktop.in
++++ b/data/onboard-autostart.desktop.in
+@@ -2,7 +2,7 @@
+ _Name=Onboard
+ _GenericName=Onboard onscreen keyboard
+ _Comment=Flexible onscreen keyboard
+-Exec=onboard --startup-delay=3.0
++Exec=/usr/bin/onboard_restart.sh
+ Icon=onboard
+ Type=Application
+ NoDisplay=true
