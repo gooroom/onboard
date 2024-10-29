@@ -7,4 +7,4 @@ gooroom-002-update-gooroom-001.patch
 gooroom-003-update-autostart.patch
 gooroom-004-CW-120.patch
 gooroom-005-fix-resource-leak.patch
-gooroom-006-change-autostart-file.patch
+#gooroom-006-change-autostart-file.patch
